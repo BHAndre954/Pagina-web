@@ -3,63 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunimundo - Descarga nuestra APK</title>
-    <link rel="stylesheet" href="style.css"> <!-- Para los estilos -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            color: #3498db;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .btn-download {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #e67e22;
-            color: #fff;
-            font-size: 18px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .btn-download:hover {
-            background-color: #d35400;
-        }
-        .img-container img {
-            width: 150px; /* Ajuste del tamaño del logo */
-            margin-top: 20px;
-        }
-    </style>
+    <title>Comunimundo - Descarga la APK</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Bienvenido a Comunimundo</h1>
-        <p>Descarga nuestra aplicación desde el botón de abajo.</p>
-
-        <div class="img-container">
-            <img src="assets/Logo.png" alt="Logo Comunimundo">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Comunimundo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Características</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <a href="https://drive.google.com/file/d/1IXRBBvhOvavQrymyckOYAaukh55o-QrD/view?usp=sharing" 
-           class="btn-download" target="_blank">
-            Descargar APK
-        </a>
+    <!-- Carrusel de imágenes -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/image1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/image2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/image3.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
+    <!-- Sección: Sobre Nosotros -->
+    <section id="about" class="container mt-5">
+        <h2>Sobre Nosotros</h2>
+        <p>Comunimundo es una aplicación diseñada para facilitar el aprendizaje de lenguaje de señas, ayudando a las personas a comunicarse de manera efectiva. Nuestro objetivo es proporcionar una plataforma amigable y accesible para aprender y practicar.</p>
+    </section>
+
+    <!-- Sección: Características -->
+    <section id="features" class="container mt-5">
+        <h2>Características Principales</h2>
+        <ul>
+            <li>Aprendizaje interactivo del alfabeto y palabras en lenguaje de señas.</li>
+            <li>Práctica con ejercicios visuales.</li>
+            <li>Comunicación mediante mensajes y deletreo en señas.</li>
+        </ul>
+    </section>
+
+    <!-- Sección: Descargar APK -->
+    <div class="container text-center mt-5">
+        <h1>BIENVENIDO A COMUNIMUNDO</h1>
+        <p>Descarga nuestra aplicación desde el botón de abajo.</p>
+        <img src="assets/Logo.png" alt="Logo Comunimundo" style="width: 150px;">
+        <br>
+        <a href="https://drive.google.com/file/d/1IXRBBvhOvavQrymyckOYAaukh55o-QrD/view?usp=sharing" class="btn btn-warning mt-3">Descargar APK</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

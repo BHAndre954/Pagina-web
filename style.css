@@ -1,25 +1,31 @@
 body {
-    background-color: #f9f9f9;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
 }
 
-h1 {
+h1, h2 {
     color: #2c3e50;
-    text-transform: uppercase;
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.btn-download {
-    background-color: #3498db;
-    color: white;
+.carousel {
+    margin-bottom: 30px;
+}
+
+.btn-warning {
+    background-color: #e67e22;
     padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
 }
 
-.btn-download:hover {
-    background-color: #2980b9;
+.btn-warning:hover {
+    background-color: #d35400;
 }
