@@ -1,51 +1,104 @@
-/* Estilos generales */
+/* Tipografía y colores */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
-    margin: 0;
-    padding-top: 56px; /* Ajuste para el navbar fijo */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fa; /* Fondo gris muy claro */
+    color: #333;
 }
 
-.hero-section {
-    background: linear-gradient(45deg, #6db3f2, #1e69de);
-    color: white;
-    padding: 100px 0;
+h1, h2 {
+    color: #34495e; /* Azul oscuro */
 }
 
-.hero-title {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-.navbar {
-    background-color: #2c3e50;
-    transition: background-color 0.5s ease;
+/* Estilo del carrusel */
+.carousel {
+    margin-bottom: 20px; /* Reducimos el margen inferior */
 }
 
-.navbar.scrolled {
-    background-color: #1e69de;
-}
-
-.nav-link {
-    color: white !important;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #ffdf00 !important;
-}
-
-h2 {
-    color: #1e69de;
-    margin-bottom: 30px;
+.carousel-item img {
+    max-height: 350px;  /* Ajustamos la altura máxima para mejor proporción */
+    width: 100%;        
+    object-fit: cover;  
+    margin: 0 auto;     
+    display: block;     
+    height: auto;
 }
 
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */
     padding: 10px;
+    border-radius: 8px;
+    color: #fff;
 }
 
+.carousel-caption h5, .carousel-caption p {
+    color: #fff;
+}
+
+/* Colores de fondo más suaves */
+section {
+    padding: 40px 0; /* Ajustamos el espaciado */
+}
+
+section:nth-child(odd) {
+    background-color: #f7f9fa; /* Fondo gris claro */
+}
+
+section:nth-child(even) {
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Botón de llamada a la acción */
+.btn-warning {
+    background-color: #e67e22;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #d35400;
+    transform: translateY(-3px);
+}
+
+/* Footer */
 footer {
-    background-color: #2c3e50;
+    padding: 20px 0;
+    background-color: #34495e; /* Azul oscuro */
+    color: #ecf0f1; /* Texto gris claro */
+}
+
+footer a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e67e22;
+}
+
+/* Espaciado reducido */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .carousel-item img {
+        max-height: 250px; 
+    }
 }
