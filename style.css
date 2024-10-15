@@ -1,62 +1,48 @@
 /* Tipografía y colores */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f7f9fa; /* Fondo gris muy claro */
+    background-color: #f7f7f7;
     color: #333;
 }
 
 h1, h2 {
-    color: #34495e; /* Azul oscuro */
+    color: #2c3e50;
 }
 
 p {
     font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
 /* Estilo del carrusel */
 .carousel {
-    margin-bottom: 20px; /* Reducimos el margen inferior */
+    margin-bottom: 30px;
 }
 
 .carousel-item img {
-    max-height: 350px;  /* Ajustamos la altura máxima para mejor proporción */
-    width: 100%;        
-    object-fit: cover;  
-    margin: 0 auto;     
-    display: block;     
-    height: auto;
+    max-height: 400px;  /* Limita la altura máxima de las imágenes */
+    width: 100%;        /* Asegura que las imágenes ocupen todo el ancho del carrusel */
+    object-fit: contain;  /* Ajusta las imágenes para que no se distorsionen ni recorten demasiado */
+    margin: 0 auto;     /* Centra las imágenes */
+    display: block;     /* Asegura que las imágenes sean bloques centrados */
+    height: auto;       /* Ajusta la altura automáticamente */
 }
 
 .carousel-caption {
     background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */
     padding: 10px;
-    border-radius: 8px;
-    color: #fff;
+    border-radius: 10px;
 }
 
 .carousel-caption h5, .carousel-caption p {
-    color: #fff;
-}
-
-/* Colores de fondo más suaves */
-section {
-    padding: 40px 0; /* Ajustamos el espaciado */
-}
-
-section:nth-child(odd) {
-    background-color: #f7f9fa; /* Fondo gris claro */
-}
-
-section:nth-child(even) {
-    background-color: #ffffff; /* Fondo blanco */
+    color: #fff; /* Texto blanco */
 }
 
 /* Botón de llamada a la acción */
 .btn-warning {
     background-color: #e67e22;
-    padding: 12px 25px;
+    padding: 15px 30px;
     border-radius: 50px;
     font-size: 18px;
     transition: all 0.3s ease;
@@ -64,18 +50,17 @@ section:nth-child(even) {
 
 .btn-warning:hover {
     background-color: #d35400;
-    transform: translateY(-3px);
+    transform: translateY(-5px); /* Animación sutil */
 }
 
 /* Footer */
 footer {
     padding: 20px 0;
-    background-color: #34495e; /* Azul oscuro */
-    color: #ecf0f1; /* Texto gris claro */
+    background-color: #f7f7f7;
 }
 
 footer a {
-    color: #ecf0f1;
+    color: #333;
     margin: 0 10px;
     text-decoration: none;
 }
@@ -84,7 +69,11 @@ footer a:hover {
     color: #e67e22;
 }
 
-/* Espaciado reducido */
+/* Secciones con más espaciado */
+section {
+    padding: 60px 0;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -99,6 +88,6 @@ footer a:hover {
         font-size: 14px;
     }
     .carousel-item img {
-        max-height: 250px; 
+        max-height: 250px; /* Limita la altura de las imágenes en móviles */
     }
 }
