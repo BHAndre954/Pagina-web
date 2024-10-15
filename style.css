@@ -1,17 +1,50 @@
 /* Tipografía y colores */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2); /* Fondo azul claro con gradiente */
+    color: #263238; /* Texto oscuro para contraste */
 }
 
 h1, h2 {
-    color: #2c3e50;
+    color: #00796b; /* Encabezados en un azul oscuro */
 }
 
 p {
     font-size: 16px;
     line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Navbar con color y texto centrado */
+.custom-navbar {
+    background-color: #ffffff !important; /* Fondo blanco para el navbar */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar el navbar */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #000000 !important; /* Texto negro para el logo "Comunimundo" */
+    text-align: center;
+}
+
+.navbar-brand:hover {
+    color: #00796b !important; /* Cambia a azul oscuro al pasar el ratón */
+}
+
+.nav-link {
+    color: #000000 !important; /* Enlaces en negro */
+}
+
+.nav-link:hover {
+    color: #00796b !important; /* Cambia a azul oscuro al pasar el ratón */
+}
+
+/* Sección con fondo colorido */
+.section-background {
+    background-color: #a5d6a7 !important; /* Verde suave */
+    padding: 50px;
+    border-radius: 15px;
     margin-bottom: 20px;
 }
 
@@ -21,27 +54,60 @@ p {
 }
 
 .carousel-item img {
-    max-height: 400px;  /* Limita la altura máxima de las imágenes */
-    width: 100%;        /* Asegura que las imágenes ocupen todo el ancho del carrusel */
-    object-fit: contain;  /* Ajusta las imágenes para que no se distorsionen ni recorten demasiado */
-    margin: 0 auto;     /* Centra las imágenes */
-    display: block;     /* Asegura que las imágenes sean bloques centrados */
-    height: auto;       /* Ajusta la altura automáticamente */
+    height: 350px; /* Mantén la altura fija */
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */
+    background: rgba(0, 0, 0, 0.5); 
     padding: 10px;
     border-radius: 10px;
 }
 
 .carousel-caption h5, .carousel-caption p {
-    color: #fff; /* Texto blanco */
+    color: #fff; 
+}
+
+/* Unificación de estilos para las dos secciones del carrusel */
+#explore-app, #explore-app-mod {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Carrusel de imágenes */
+#explore-app .carousel-item img, #explore-app-mod .carousel-item img {
+    height: 350px; /* Ajustamos el tamaño de la imagen */
+    object-fit: contain; /* Para que la imagen se ajuste sin distorsionarse */
+}
+
+/* Cuadro de texto con diseño */
+.text-box, .text-box-mod {
+    background-color: #e8f5e9; /* Mismo color de fondo */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #388e3c; /* Verde más fuerte */
+}
+
+.text-box h2, .text-box-mod h2 {
+    color: #388e3c; /* Mismo color de título */
+    font-size: 28px;
+}
+
+.text-box p, .text-box-mod p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
 }
 
 /* Botón de llamada a la acción */
 .btn-warning {
-    background-color: #e67e22;
+    background-color: #ff7043; /* Naranja vibrante */
     padding: 15px 30px;
     border-radius: 50px;
     font-size: 18px;
@@ -49,24 +115,25 @@ p {
 }
 
 .btn-warning:hover {
-    background-color: #d35400;
-    transform: translateY(-5px); /* Animación sutil */
+    background-color: #e64a19; /* Naranja oscuro al hacer hover */
+    transform: translateY(-5px);
 }
 
-/* Footer */
-footer {
-    padding: 20px 0;
-    background-color: #f7f7f7;
+/* Footer con color y nuevo estilo */
+.custom-footer {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
 }
 
 footer a {
-    color: #333;
+    color: #ff7043;
     margin: 0 10px;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #e67e22;
+    color: #fff; /* Cambia a blanco al hacer hover */
 }
 
 /* Secciones con más espaciado */
@@ -88,6 +155,6 @@ section {
         font-size: 14px;
     }
     .carousel-item img {
-        max-height: 250px; /* Limita la altura de las imágenes en móviles */
+        max-height: 250px; 
     }
 }
